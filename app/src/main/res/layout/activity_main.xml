@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Foodie.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            app:title="Order Here"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Foodie.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<LinearLayout
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Deskripsi gambar makanan"
+        android:onClick="launchDetailActivity"
+        android:src="@drawable/fried_rice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foodie"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="substractOne"
+            android:text="@string/minus" />
+
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/zero"
+            android:textAlignment="center" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addOne"
+            android:text="@string/plus" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/chefNote_editText"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:hint="masukan pesanan"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/dine_radio"
+            android:onClick="setDiningOption"
+            android:text="@string/dine_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/take_radio"
+            android:onClick="setDiningOption"
+            android:text="@string/take_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchAboutActivity"
+        android:text="About" />
+</LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:src="@drawable/cart"
+        android:onClick="launchCartActivity"
+        android:contentDescription="Tambahkan item ke dalam keranjang belanja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
