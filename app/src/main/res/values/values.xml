@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>Fried Rice</item>
+        <item>Noodle</item>
+        <item>Satay</item>
+    </string-array>
+    <string-array name="descriptions">
+<item>Fried rice is a dish of cooked rice that has been stir-fried
+in a wok or a frying pan and is usually mixed with other ingredients
+such as eggs, vegetables, seafood, or meat.</item>
+        <item>Noodles are a type of food made from unleavened dough which
+is either rolled flat and cut, stretched, or extruded, into long strips
+or strings.</item>
+        <item>Satay or sate in Indonesian spelling, is a Southeast Asian
+dish of seasoned, skewered and grilled meat, served with a
+sauce.</item>
+    </string-array>
+    <integer-array name="images">
+        <item>@drawable/fried_rice</item>
+        <item>@drawable/noodle</item>
+        <item>@drawable/satay</item>
+    </integer-array>
+    <integer-array name="quantities">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="prices">
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </integer-array>
+</resources>
