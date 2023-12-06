@@ -57,7 +57,6 @@ public class AccountActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.menu_account) {
-            // Buka MainActivity
             startActivity(new Intent(this, MainActivity.class));
             return true;
         }

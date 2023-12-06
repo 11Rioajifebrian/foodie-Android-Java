@@ -30,6 +30,11 @@
         android:layout_height="wrap_content"
         android:text="@string/zero" />
     <TextView
+        android:id="@+id/order_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Fried Rice, 3 Noodle, 0 Satay" />
+    <TextView
         android:id="@+id/chefNote_TextView_cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
